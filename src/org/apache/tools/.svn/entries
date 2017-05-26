@@ -1,0 +1,50 @@
+10
+
+dir
+31
+svn://git.oschina.net/1177/java_demo/src/org/apache/tools
+svn://git.oschina.net/1177/java_demo
+
+
+
+2017-05-23T09:37:33.000000Z
+31
+zhaofeng365 <117712327@qq.com>
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+503357ad-e6dc-45aa-9a84-c34b0f0ca97d
+
+
+
+
+
+
+0
+
+ant
+dir
+
+bzip2
+dir
+
+mail
+dir
+
+tar
+dir
+
+zip
+dir
+

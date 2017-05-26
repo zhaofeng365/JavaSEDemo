@@ -1,0 +1,10 @@
+package com.atguigu.day14.java;
+
+
+public class TestCustomerDAO {
+	public static void main(String[] args) {
+		CustomerDAO c = new CustomerDAO();
+		c.add(new Customer());
+		c.get(0);
+	}
+}
