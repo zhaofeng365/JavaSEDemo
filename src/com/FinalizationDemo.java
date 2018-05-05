@@ -19,7 +19,6 @@ class Cake extends Object {
     }  
       
     protected void finalize() throws java.lang.Throwable {  
-        super.finalize();  
         System.out.println("Cake Object " + id + "is disposed");  
     }  
 }  

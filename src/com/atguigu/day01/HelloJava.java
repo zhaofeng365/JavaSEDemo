@@ -1,5 +1,6 @@
 package com.atguigu.day01;
-
+import static java.lang.System.out;
+import static java.lang.Integer.*;
 /**
 这是我的第一个java程序
 @author shkstart
@@ -18,14 +19,11 @@ public class HelloJava{
 	*/
 	public static void main(String[] args){
 		System.out.println("Hello World!" +'\n' +"Hello atguigu.com");
-		
+
+			out.println(MAX_VALUE);
+			out.println(toHexString(42));
+
 	}
 }
 
-class Person{
-
-}
-
-class Hello{
-
-}
+ 

@@ -1,4 +1,7 @@
 package com.sort;
+
+import java.util.Random;
+
 /**
  * 插入排序
  * @author Administrator
@@ -23,24 +26,18 @@ public class InsertSort {
 	}
 	public static void main(String[] args) {
 		//insertSort();
-		int[] arr = {10,2,4,5,1,56,23};
+		int[] arr = {3,7,4,15,2};
+		/*int[] arr = new int[1000];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = new Random().nextInt(10000);
+		}*/
 		insertSort(arr);
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	/**
+	 * 设定第一个元素是有序的，依次循环后面元素，插入到前面有序元素中
+	 * @param arr
+	 */
 	public static void insertSort(int[] arr){
 		for (int i = 1; i < arr.length; i++) {
 			int temp = arr[i];
@@ -51,9 +48,9 @@ public class InsertSort {
 			arr[j+1] = temp;
 		} 
 		
-		for (int m = 0; m < arr.length; m++) {
+		 for (int m = 0; m < arr.length; m++) {
 			System.out.print(arr[m]+"\t");
-		}
+		} 
 		
 	}
 }

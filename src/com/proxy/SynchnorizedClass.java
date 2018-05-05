@@ -15,7 +15,6 @@ import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.sun.jmx.remote.util.CacheMap;
 
 public class SynchnorizedClass implements child{
       
@@ -47,9 +46,9 @@ public class SynchnorizedClass implements child{
 		 
 		 Queue<Object> msgQueue = new LinkedList<Object>();
 		 
-		 ArrayList<String> arrayList1=new ArrayList(); //µÚÒ»ÖÖ Çé¿ö
+		 ArrayList<String> arrayList1=new ArrayList(); //ï¿½ï¿½Ò»ï¿½ï¿½ ï¿½ï¿½ï¿½
 		 
-		 ArrayList arrayList2=new ArrayList<String>();//µÚ¶þÖÖ Çé¿ö  
+		 ArrayList arrayList2=new ArrayList<String>();//ï¿½Ú¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½  
 		 arrayList1.add("323");
 		 //arrayList1.add(234234);
 		 arrayList2.add("32sdf3");
@@ -89,7 +88,7 @@ interface child extends Interfaces{
 	 public abstract void get();
  }
  class ImplClass{
-	 /***·´×ª**/
+	 /***ï¿½ï¿½×ª**/
 	 public void meee() {
 		// TODO Auto-generated method stub
 

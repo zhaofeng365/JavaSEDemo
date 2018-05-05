@@ -1,47 +1,31 @@
 package com.interview;
 
+import java.util.Arrays;
+
 public class QuickSort {
 
 	//int a2[] = {49,38,65,97,76,13,27,41,78,34};//28
 		public static int getMiddle(int[] list, int low, int high) {
-			for (int i = 0; i < list.length; i++) {
-				System.out.print(list[i]+" ");
-			}
-			System.out.println("");
-			System.out.println("-------------------------BEGIN--------------------------");
+		 
 			int tmp = list[low]; // 数组的第一个作为中轴
+			//采用的是分治思想
 			while (low < high) {
-				while (low < high && list[high] >= tmp) {
-					high--;
-				}
-				list[low] = list[high]; // 比中轴小的记录移到低端
-				for (int i = 0; i < list.length; i++) {
-					System.out.print(list[i]+" ");
-					if(i==list.length-1){
-						System.out.println();
+				
+					while (low < high && tmp <= list[high]) {
+						high--; //目的是找出比中轴小的数据
 					}
-				}
-				while (low < high && list[low] <= tmp) {
-					low++;
-				}
-				 System.out.println(high+ "  "+low);
-				list[high] = list[low]; // 比中轴大的记录移到高端
-				for (int i = 0; i < list.length; i++) {
-					System.out.print(list[i]+" ");
-					if(i==list.length-1){
-						System.out.println();
+					
+					list[low] = list[high]; //比中轴小的记录移到低端
+					
+					while (low < high && tmp >= list[low]  ) {
+						low++;//目的是找出比中轴大的数据
 					}
-				}
-
+				 
+					list[high] = list[low]; // 比中轴大的记录移到高端
 			}
 
 			list[low] = tmp; // 中轴记录到尾
-			for (int i = 0; i < list.length; i++) {
-				System.out.print(list[i]+" ");
-				if(i==list.length-1){
-					System.out.println();
-				}
-			}
+			 
 			return low; // 返回中轴的位置
 
 		}
@@ -61,14 +45,12 @@ public class QuickSort {
 		}
 
 		public static void main(String[] args) {
-			int a2[] = {49,38,65,97,76,13,27,41,78};
-			System.out.println("-------------------------开始排序--------------------------");
+			//int a2[] = {1,4,75,34,22,67,43,2,3,18,1,9,21,43,54,22};//16个元素
+			int a2[] = {1,4,75,34,22,67};//6个元素
+			System.out.println("-------------------------排序之前--------------------------"+Arrays.toString(a2));
 			_quickSort(a2, 0, a2.length - 1);
-			
-			System.out.println("-------------------------结束排序--------------------------");
-			for (int i = 0; i < a2.length; i++) {
-				System.out.print(a2[i]+" ");
-			}
+			System.out.println("-------------------------排序之后--------------------------"+Arrays.toString(a2));
+		 
 		}
 
 

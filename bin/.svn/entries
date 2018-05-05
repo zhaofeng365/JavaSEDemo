@@ -2,13 +2,13 @@
 
 dir
 23
-svn://git.oschina.net/1177/java_demo/bin
+svn://git.oschina.net/1177/java_demo/src
 svn://git.oschina.net/1177/java_demo
 
 
 
-2016-11-11T04:19:39.000Z
-2
+2017-03-19T06:49:47.000Z
+23
 zhaofeng365 <117712327@qq.com>
 
 
@@ -27,5 +27,11 @@ svn:special svn:externals svn:needs-lock
 503357ad-e6dc-45aa-9a84-c34b0f0ca97d
 
 com
+dir
+
+javax
+dir
+
+org
 dir
 

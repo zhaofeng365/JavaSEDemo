@@ -1,12 +1,12 @@
 package com;
 
-public class ClassLoaderOrder {
+public class ClassLoaderOrder { //执行 main方法其实是初始化阶段
 	public static int k = 0;
 	public static ClassLoaderOrder t1 = new ClassLoaderOrder("t1");
 	public static ClassLoaderOrder t2 = new ClassLoaderOrder("t2");
 	public static int i = print("i");
 	public static int n = 99;
-	public int j = print("j");
+	public  int j = print("j");
 
 	{
 		print("构造块");
@@ -17,7 +17,7 @@ public class ClassLoaderOrder {
 	}
 
 	public ClassLoaderOrder(String str) {
-		System.out.println((++k) + ":" + str + "   i=" + i + "    n=" + n);
+		System.out.println((++k) + " 构造器 :" + str + "   i=" + i + "    n=" + n);
 		++i;
 		++n;
 	}
@@ -37,7 +37,6 @@ public class ClassLoaderOrder {
 	 */  
 	public static void main(String[] args) {
 		ClassLoaderOrder t = new ClassLoaderOrder("init");
-
 		ClassLoaderOrder t2 = new ClassLoaderOrder("init2");
 
 	}

@@ -1,5 +1,8 @@
 package com.sort;
-
+/**
+ * @author wangzhaofeng
+ *
+ */
 public class MergeSort {
 	  
 	 private static int mark = 0;

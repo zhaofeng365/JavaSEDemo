@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JDK7"/>
 	<classpathentry kind="lib" path="lib/common11.jar"/>
 	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar" sourcepath="D:/J2EE-src/source-jar/commons-lang-2.6-sources.jar">
 		<attributes>
@@ -15,5 +14,6 @@
 	<classpathentry kind="lib" path="lib/axis.jar"/>
 	<classpathentry kind="lib" path="lib/axis-jaxrpc-1.4.jar"/>
 	<classpathentry kind="lib" path="lib/core-3.4.2.v_883_R34x.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

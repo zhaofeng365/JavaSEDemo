@@ -17,7 +17,7 @@ public class Numeric2ChineseStr {
 		// 读文件
 		BufferedReader br = new BufferedReader(new FileReader(fileName));
 		String temp = null;
-		temp = br.readLine();
+		temp = br.readLine();//读取一行
 		String res = "";
 
 		while (null != temp) {
