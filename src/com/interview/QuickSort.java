@@ -33,7 +33,7 @@ public class QuickSort {
 		public static void _quickSort(int[] list, int low, int high) {
 
 			if (low < high) {
-
+ 
 				int middle = getMiddle(list, low, high); // 将list数组进行一分为二
 
 				_quickSort(list, low, middle - 1); // 对低字表进行递归排序
